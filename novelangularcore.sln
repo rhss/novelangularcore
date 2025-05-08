@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "novelangularcore.Server", "novelangularcore.Server\novelangularcore.Server.csproj", "{3537049D-98B6-4660-896A-67AB137F9CF6}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "novelangularcore.client", "novelangularcore.client\novelangularcore.client.esproj", "{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3537049D-98B6-4660-896A-67AB137F9CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3537049D-98B6-4660-896A-67AB137F9CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3537049D-98B6-4660-896A-67AB137F9CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3537049D-98B6-4660-896A-67AB137F9CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A39ABC7-2B92-4DEE-9CF5-B9E42EABD86F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51A1CD2D-4F71-4F88-AC67-03A0D56D3FA5}
+	EndGlobalSection
+EndGlobal

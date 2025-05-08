@@ -1,0 +1,57 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MenuComponent } from '../layout/menu.component';
+import { FooterComponent } from '../layout/footer.component';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, MenuComponent, FooterComponent],
+  template: `
+<app-menu></app-menu>
+
+<main class="home">
+  <h1>Novels</h1>
+  <div class="card-container">
+    <div class="card" *ngFor="let novel of novels">
+      <h2>{{ novel.title }}</h2>
+      <img [src]="novel.image" alt="Capa da novel">
+      <p>{{ novel.intro | slice:0:100 }}...</p>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>
+  `,
+  styles: [`
+    .home {
+      padding: 1rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  `]
+})
+export class HomeComponent {
+  novels = [
+    { title: 'Novel 1', image: 'https://via.placeholder.com/150', intro: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { title: 'Novel 2', image: 'https://via.placeholder.com/150', intro: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+    { title: 'Novel 3', image: 'https://via.placeholder.com/150', intro: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.' }
+  ];
+}
